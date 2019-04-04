@@ -1,2 +1,2 @@
 # ModelChecker
-XML files for UPPAAL model checker
+XML and query files for UPPAAL model checker
