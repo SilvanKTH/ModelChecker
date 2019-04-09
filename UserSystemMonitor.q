@@ -21,6 +21,16 @@ It is possible for a benign user to reach the no service state --> satisfied
 E<> User3.NoService
 
 /*
+It is possible for all malicious users and a benign user to get into a no-service state --> satisfied
+*/
+E<> User1.Service and User2.Service and User3.NoService and MalUser1.NoService and MalUser2.NoService
+
+/*
+Due to differing timing constraints, User3 may reach the Pay state --> satisfied
+*/
+E<> User3.Pay
+
+/*
 There is no deadlock, i.e. the system is always up and running --> satisfied
 */
 A[] not deadlock\
