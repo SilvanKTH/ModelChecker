@@ -654,17 +654,21 @@ systemReady</label>
 User1 = User(1, 21);
 User2 = User(2, 22);
 User3 = User(3, 23);
-User4 = User(4, 20); // For feature testing
-User5 = User(5, 23); // For feature testing
+User4 = User(6, 21); // For feature testing
+User5 = User(7, 22); // For feature testing
+User6 = User(8, 23); // For feature testing
 
 MalUser1 = MalUser(4, 22); // To do: Test whether different times can be used, e.g. times that are below the critical threshold --&gt; yes, that is possible
 MalUser2 = MalUser(5, 21);
+MalUser3 = MalUser(9, 22); // For feature testing
+MalUser4 = MalUser(10, 21); // For feature testing
 
 System1 = System();
 Monitor1 = Monitor();
 
 // List one or more processes to be composed into a system.
 system User1, User2, User3, MalUser1, MalUser2, System1, Monitor1;
+//system User1, User2, User3, User4, User5, User6, MalUser1, MalUser2, MalUser3, MalUser4, System1, Monitor1;
 
 
     </system>
